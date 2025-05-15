@@ -1,0 +1,33 @@
+Microservices Architecture:
+Product Service (REST API)
+
+Manages product catalog
+
+Built with Express.js
+
+REST endpoints for CRUD operations on products
+
+Order Service (gRPC)
+
+Handles order processing
+
+Uses gRPC for communication
+
+Receives orders and processes them
+
+Notification Service (Kafka consumer)
+
+Listens for order events
+
+Sends notifications (simulated)
+
+Uses Kafka for event streaming
+
+API Gateway (GraphQL)
+
+Unified entry point for clients
+
+GraphQL interface that aggregates data from other services
+
+Communicates with Product (REST) and Order (gRPC) services
+
